@@ -586,6 +586,13 @@ Introduction
 \begin_layout Standard
 Here is the text text text text text text text text text text text text
  text text text text.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "palmieri_anonymity_2016"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -820,7 +827,7 @@ phy entries embedded in the LaTeX-file.
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEabrv,IEEEexample"
+bibfiles "IEEEabrv,IEEEexample,{{cookiecutter.document_name}}"
 options "IEEEtran"
 
 \end_inset
