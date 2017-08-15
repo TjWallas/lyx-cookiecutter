@@ -1,0 +1,3 @@
+#!/bin/bash
+make && \
+touch ./.git/.commit

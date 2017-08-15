@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ -f "./.git/.commit" ]; then
+    rm ./.git/.commit && \
+    git add {{cookiecutter.document_name}}.tex && git commit --amend --no-verify -C HEAD
+fi
