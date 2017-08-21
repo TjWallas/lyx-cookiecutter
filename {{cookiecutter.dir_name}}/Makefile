@@ -15,6 +15,7 @@ SOURCE = $(FILENAME).lyx
 SOURCE_BIB = $(wildcard *.bib)
 
 .PHONY: clean rebuild all
+.POSIX:
 
 all: $(TARGET)
 
