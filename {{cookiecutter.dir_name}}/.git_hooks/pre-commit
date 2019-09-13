@@ -1,3 +1,5 @@
 #!/bin/bash
-make && \
+set -euf -o pipefail
+source ./.git_hooks/vars.sh
+(cd "$PROJECT_DIR"; make) && \
 touch ./.git/.commit

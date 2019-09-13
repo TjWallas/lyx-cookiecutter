@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+set -euf -o pipefail
+source ./.git_hooks/vars.sh
 if [ -f "./.git/.commit" ]; then
     rm ./.git/.commit && \
-    git add {{cookiecutter.document_name}}.tex && git commit --amend --no-verify -C HEAD
+    git add "$PROJECT_DIR/$FILENAME.tex" "$PROJECT_DIR/$FILENAME.pdf" && git commit --amend --no-verify -C HEAD
 fi
